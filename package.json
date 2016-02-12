@@ -1,0 +1,28 @@
+{
+  "name": "cdk",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "express": "^4.13.4",
+    "gulp-live-server": "^0.0.29"
+  },
+  "devDependencies": {
+    "require-dir": "^0.3.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pstrum/cdk.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pstrum/cdk/issues"
+  },
+  "homepage": "https://github.com/pstrum/cdk#readme"
+}
