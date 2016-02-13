@@ -67,18 +67,6 @@ main {
   color: #4A90E2;
 }
 
-.staff-directory a:after {
-  content: "";
-  display: block;
-  margin: 0 auto;
-  bottom: 10%;
-  height: 0;
-  width: 90%;
-  border-bottom: 2px solid #4A90E2;
-  transform: translateZ(0) scaleX(0);
-  transition: 0.14s all cubic-bezier(0.5, -0.1, 0.25, 1.3);
-}
-
-.staff-directory a:hover:after {
-  transform: translateZ(0) scaleX(1);
+.staff-directory a:hover {
+  text-decoration: underline;
 }
