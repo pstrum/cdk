@@ -6,8 +6,19 @@ body {
   background: #FDFDFD;
 }
 
-header {
+button {
+  border: 0;
+  background: none;
+  cursor: pointer;
+}
+
+button:focus {
+  outline: none;
+}
+
+header h1 {
   padding: 2rem;
+  margin-top: 51px;
   font-weight: bold;
   font-size: 2rem;
   color: white;
@@ -69,4 +80,86 @@ main {
 
 .staff-directory a:hover {
   text-decoration: underline;
+}
+
+nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: auto;
+}
+
+.menu-nav {
+  display: flex;
+  padding-left: 1em;
+  border: 1px solid #ff0000;
+  background: linear-gradient(#12d435, #278f0d);
+}
+
+.menu-nav > li {
+  position: relative;
+  border-right: 1px solid #ffba00;
+}
+
+.menu-nav > li:hover {
+  background: #1c5d0c;
+}
+
+.menu-nav > li:last-child {
+  border-right: 0;
+}
+
+.menu-nav-button {
+  display: block;
+  padding: 1rem;
+  width: 100%;
+  font-size: 1rem; 
+  font-weight: 400;
+  line-height: 1.4;
+  color: #ff0000;
+  text-transform: uppercase;
+}
+
+.menu-nav-button:hover {
+  color: white;
+}
+
+.menu-nav ul.open {
+  position: absolute;
+  visibility: visible;
+  z-index: 0;
+}
+
+.menu-nav-sub {
+  position: absolute;
+  visibility: hidden;
+  width: 100%;
+  text-align: center;
+  background-color: #c7e7f5;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.menu-nav-sub > li {
+  border-top: 1px solid #ffba00;
+}
+
+.menu-nav-sub > li:first-child {
+  border-top: 0;
+}
+
+.menu-nav-sub > li:hover {
+  background-color: #145f81;
+}
+
+.menu-nav-sub a {
+  display: block;
+  padding: 1rem;
+  color: #6e3b01;
+}
+
+.menu-nav-sub a:hover {
+  color: #ff9600;
 }
